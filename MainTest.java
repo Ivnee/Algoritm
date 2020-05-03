@@ -1,21 +1,39 @@
+
 public class MainTest {
     public static void main(String[] args) {
-        Queue<Integer> queue = new QueueImpl<>(5);
-//        Queue<Integer> queue = new PriorityQueue<>(5);
-        System.out.println(queue.insert(3));
-        System.out.println(queue.insert(5));
-        System.out.println(queue.insert(1));
-        System.out.println(queue.insert(2));
-        System.out.println(queue.insert(6));
-        System.out.println(queue.remove());
-        System.out.println(queue.insert(4));
+        Dequeue<Integer> deque = new DequeImpl<>(4);
+        System.out.println(deque.insertLeft(3));
+        System.out.println(deque.insertLeft(2));
+        System.out.println(deque.insertLeft(1));
+        System.out.println(deque.insertRight(4));
+        System.out.println(deque.insertRight(5));
 
-        System.out.println("Queue peek: " + queue.peekFront());
-        System.out.println("Queue size: " + queue.size());
-        System.out.println("Queue is full: " + queue.isFull());
+        System.out.println("Deque peekFront: " + deque.peekFront());
+        System.out.println("Deque peekBack: " + deque.peekBack());
+        System.out.println("Deque size: " + deque.size());
+        System.out.println("Deque is full: " + deque.isFull());
 
-        while (!queue.isEmpty()) {
-            System.out.println(queue.remove());
+        while (!deque.isEmpty()){
+            System.out.println(deque.removeLeft());
+            System.out.println(deque.removeRight());
+        }
+
+        reverseMSG("abcd 123123 zel");
+    }
+
+
+    public static void reverseMSG(String msg){
+        String[] arr = msg.split("");
+        //String[] arr = msg.split(" ");
+        StackImpl<String> st = new StackImpl<>(arr.length);
+
+        int i=0;
+        while (!st.isFull()){
+            st.push(arr[i++]);
+        }
+        while (!st.isEmpty()){
+            System.out.print(st.pop());
+            //System.out.print(st.pop() + " ");
         }
     }
 }
