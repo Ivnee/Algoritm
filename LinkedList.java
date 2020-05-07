@@ -1,4 +1,4 @@
-public interface LinkedList<E> extends Iterable<E> {
+public interface LinkedList<E>  {
     void insertFirst(E value);
     E removeFirst();
     boolean remove(E value);
