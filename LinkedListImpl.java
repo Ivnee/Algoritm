@@ -77,6 +77,25 @@ public class LinkedListImpl<E> implements LinkedList <E> {
         return firstElement != null ? firstElement.value: null;
     }
 
+    @Override
+    public Iterator<E> iterator() {
+        Iterator<E> iter = new Iterator<E>() {
+            @Override
+            public boolean hasNext() {
+                return firstElement != null;
+            }
+
+            @Override
+            public E next() {
+                E result = firstElement.value;
+                if(firstElement == null){
+                    throw new IndexOutOfBoundsException("First Element is null");
+                }
+                firstElement = firstElement.next;
+                return result;
+            }
+        };
+        return iter;
     }
 
     class Entry<E>{
