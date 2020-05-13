@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caca24cf-298b-4668-970b-8275f7b495c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Bag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Save.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Treners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Treners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestDB.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trener.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/META-INF/Trener.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Tree$TraverseMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Tree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/TreeImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/TreeImpl$NodeAndItsParent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/TreeImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Treners.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aotMx6tN4NmrZNv1WY8VZQklFE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

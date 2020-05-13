@@ -2,12 +2,18 @@ import java.util.Random;
 import java.util.Stack;
 
 public class TreeImpl<E extends Object & Comparable<? super E>> implements Tree<E>{
+    static Random rd = new Random();
+
 
     private Node<E> root;
     private int size;
 
 
 
+
+    public Node<E> getRoot() {
+        return root;
+    }
 
 
     @Override
@@ -222,6 +228,42 @@ public class TreeImpl<E extends Object & Comparable<? super E>> implements Tree<
         postOrder(current.getLeftChild());
         postOrder(current.getRightChild());
         System.out.println(current.getValue());
+    }
+    public static Tree<Integer> createRandomIntTree(int deep) {
+        TreeImpl <Integer> tree = new TreeImpl<>();
+        for (int i = 0; i <getDeep(deep) - 1; i++) {
+            tree.add(rd.nextInt(50) - 25);
+        }
+        System.out.println("Tree balance is: " + checkBalance(tree.getRoot()));
+        return tree;
+    }
+
+
+    private static boolean checkBalance(Node node){
+        return  node == null ||
+                checkBalance(node.getLeftChild())&&
+                        checkBalance(node.getRightChild())&&
+                        Math.abs(checkDeep(node.getLeftChild()) - checkDeep(node.getRightChild()))<=1;
+
+    }
+    private static int checkDeep(Node node){
+        return node == null ? 0:1 + Math.max(checkDeep(node.getLeftChild()),checkDeep(node.getRightChild()));
+    }
+
+    private static int getDeep(int deep){
+        return square(2,deep)-1;
+    }
+    private static int square(int num, int deep){
+        if(deep<0){
+            throw new NumberFormatException("Неверное значение глубины");
+        }
+        if(deep == 0){
+            return 1;
+        }
+        if(deep == 1){
+            return num;
+        }
+        return num * square(num,deep-1);
     }
 
 
