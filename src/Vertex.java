@@ -2,6 +2,7 @@ import java.util.Objects;
 
 public class Vertex {
     private final String lable;
+    private Vertex previous;
     private boolean visited;
 
     public Vertex(String lable) {
@@ -38,5 +39,13 @@ public class Vertex {
 
     public boolean getVisited() {
         return visited;
+    }
+
+    public Vertex getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(Vertex previous) {
+        this.previous = previous;
     }
 }

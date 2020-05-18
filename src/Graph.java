@@ -56,22 +56,35 @@ public class Graph {
             System.out.println();
         }
     }
-    public void bfs(String startLabel){//обход в ширину
+    public void bfs(String startLabel,String finishLabel) {//обход в ширину
         int startIndex = indexOf(startLabel);
-        if(startIndex == -1 ){
+        int finishIndex = indexOf(finishLabel);
+        if (startIndex == -1 || finishIndex == -1) {
             throw new IllegalArgumentException("Invalid start label");
         }
         Queue<Vertex> queue = new LinkedList<>();
         Vertex vertex = vertexList.get(startIndex);
         visitVertex(vertex, queue);
-        while (!queue.isEmpty()){
-            vertex=getNearVisitedVertex(queue.peek());
-            if(vertex!= null){
-                visitVertex(vertex,queue);
-            }else {
+        while (!queue.peek().getLable().equals(finishLabel)) {
+            vertex = getNearVisitedVertex(queue.peek());
+            if (vertex != null) {
+                visitVertex(vertex, queue);
+            } else {
                 queue.poll();
             }
         }
+        Stack<Vertex> bestWay = new Stack<>();
+        vertex = vertexList.get(finishIndex);
+        while (vertex!= null){
+            bestWay.add(vertex);
+            vertex = vertex.getPrevious();
+        }
+        System.out.print("Best way from " + startLabel +" to " + finishLabel);
+        while (!bestWay.isEmpty()){
+            System.out.print(" -> " +bestWay.pop());
+        }
+        queue.clear();
+        resetVertexState();
     }
     public void dfs(String startLabel){ // обход элементов в глубину
         int startIndex = indexOf(startLabel);
@@ -102,6 +115,7 @@ public class Graph {
         int peekIndex = vertexList.indexOf(peek);
         for (int i = 0; i < getSize(); i++) {
             if(addMat[peekIndex][i] && !vertexList.get(i).getVisited()){
+                vertexList.get(i).setPrevious(peek);
                 return vertexList.get(i);
             }
         }

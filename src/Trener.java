@@ -5,7 +5,6 @@ public class Trener {
     }
 
     private static void testBfs() {
-/*
         Graph graph = new Graph(10);
         graph.addVertex("Москва");
         graph.addVertex("Тула");
@@ -27,8 +26,7 @@ public class Trener {
         graph.addEdges("Воронеж", "Липецк", "Саратов", "Курск");
 
 
-        graph.bfs("Москва");
-*/
+        graph.bfs("Москва","Воронеж");
     }
     public void findShortWay(Graph graph){
 
