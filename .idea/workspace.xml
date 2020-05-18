@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caca24cf-298b-4668-970b-8275f7b495c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestDB.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trener.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Graph.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/META-INF/Trener.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Trener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Trener/Vertex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trener/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trener/TreeImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,10 +131,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="175" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1589391782446" />
-    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1589728328577">
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1589801830487">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1589728328577" />
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1589801830487" />
     <state x="571" y="309" width="393" height="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589142168743">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -142,22 +151,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="703" y="142" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588177697680" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1589800152212">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1589804975961">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589800152212" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1589800152212">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589804975961" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1589804975961">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1589800152212" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1589800152211">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1589804975961" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1589804975961">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1589800152211" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1589800152212">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1589804975961" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1589804975961">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1589800152212" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1589804975961" />
     <state width="1493" height="213" key="GridCell.Tab.1.bottom" timestamp="1588449337845">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
